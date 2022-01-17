@@ -14,12 +14,12 @@ public class AttackCalculator {
 
     public static int CalculateDamageForDice(Character atk, Character def, int dice)
     {
-        var defaultAttack = atk.force();
+        var defaultAttack = atk.getForce();
         var currentAttack = defaultAttack + dice;
-        var damage = atk.weaponDamage();
+        var damage = atk.getWeaponDamage();
 
 
-        if (atk.force() + dice > def.armorClass())
+        if (atk.getForce() + dice > def.getArmorClass())
         {
             if (dice == 1)
             {
@@ -28,7 +28,7 @@ public class AttackCalculator {
 
             if (dice == 20)
             {
-                damage = atk.weaponDamage() * 2;
+                damage = atk.getWeaponDamage() * 2;
             }
 
             return damage;
