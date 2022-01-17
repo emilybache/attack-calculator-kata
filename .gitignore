@@ -135,3 +135,5 @@ Game/.vs*
 Game/.vs/Game/v16/.suo
 Game/.vs/Game/v16/Server/sqlite3/storage.ide-wal
 .vs
+.idea
+
