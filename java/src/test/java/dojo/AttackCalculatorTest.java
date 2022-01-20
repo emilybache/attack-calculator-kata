@@ -1,6 +1,5 @@
 package dojo;
 
-import org.approvaltests.combinations.CombinationApprovals;
 import org.junit.jupiter.api.Test;
 
 import static org.approvaltests.combinations.CombinationApprovals.verifyAllCombinations;
@@ -27,7 +26,7 @@ public class AttackCalculatorTest {
     {
         var hero = new Character(1, attackersDamage, "human", attackersForce);
         var monster = new Character(defendersArmorClass, 1, "orc", 1);
-        var damage = AttackCalculator.CalculateDamageForDice(hero, monster, diceRolled);
+        var damage = AttackCalculator.calculateDamageForDice(hero, monster, diceRolled);
         return damage;
     }
 }
