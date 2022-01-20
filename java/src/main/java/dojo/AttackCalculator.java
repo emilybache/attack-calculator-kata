@@ -6,7 +6,7 @@ public class AttackCalculator {
 
     Random random = new Random();
 
-    public int CalculateDamage(Character atk, Character def)
+    public int calculateDamage(Character atk, Character def)
     {
         var defaultAttack = atk.getForce();
         int dice = random.nextInt(1, 20);
