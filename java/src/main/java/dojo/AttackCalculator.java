@@ -6,13 +6,13 @@ public class AttackCalculator {
 
     Random random = new Random();
 
-    public int CalculateDamage(Character atk, Character def)
+    public int calculateDamage(Character atk, Character def)
     {
         int dice = random.nextInt(1, 20);
-        return CalculateDamageForDice(atk, def, dice);
+        return calculateDamageForDice(atk, def, dice);
     }
 
-    public static int CalculateDamageForDice(Character atk, Character def, int dice)
+    public static int calculateDamageForDice(Character atk, Character def, int dice)
     {
         var defaultAttack = atk.getForce();
         var currentAttack = defaultAttack + dice;
